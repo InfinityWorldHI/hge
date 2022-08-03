@@ -1,1 +1,58 @@
-<p>counters works!</p>
+<nb-card>
+    <nb-card-header>
+        Counters
+        <div class="conf">
+            <nb-actions size="small">
+                <nb-action matRipple icon="plus-outline" (click)="addCounter()" nbTooltip="Add new Counter" nbTooltipPlacement="bottom"></nb-action>
+            </nb-actions>
+        </div>
+    </nb-card-header>
+
+    <nb-card-body>
+        <div class="row table-striped">
+            <div class="col-12">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Counter No.</th>
+                            <th scope="col">Config</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>E-1</td>
+                            <td>
+                                <nb-actions size="small">
+                                    <nb-action matRipple icon="trash-outline" (click)="delCounter(1)" nbTooltip="Delete this Counter" nbTooltipPlacement="bottom" nbTooltipStatus="danger"></nb-action>
+                                    <nb-action matRipple icon="edit-outline" (click)="editCounter(1)" nbTooltip="Edit this Counter" nbTooltipPlacement="bottom"></nb-action>
+                                </nb-actions>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>D-1</td>
+                            <td>
+                                <nb-actions size="small">
+                                    <nb-action matRipple icon="trash-outline" (click)="delCounter(2)" nbTooltip="Delete this Counter" nbTooltipPlacement="bottom" nbTooltipStatus="danger"></nb-action>
+                                    <nb-action matRipple icon="edit-outline" (click)="editCounter(2)" nbTooltip="Edit this Counter" nbTooltipPlacement="bottom"></nb-action>
+                                </nb-actions>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>C-2</td>
+                            <td>
+                                <nb-actions size="small">
+                                    <nb-action matRipple icon="trash-outline" (click)="delCounter(3)" nbTooltip="Delete this Counter" nbTooltipPlacement="bottom" nbTooltipStatus="danger"></nb-action>
+                                    <nb-action matRipple icon="edit-outline" (click)="editCounter(3)" nbTooltip="Edit this Counter" nbTooltipPlacement="bottom"></nb-action>
+                                </nb-actions>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </nb-card-body>
+</nb-card>

@@ -59,6 +59,8 @@ export class LoginComponent implements OnInit {
 
   login(): void {
       this.loading = true;
+      this.submitted = true;
+
       var data = {
         'email': this.email,
         'password': this.password
@@ -67,8 +69,10 @@ export class LoginComponent implements OnInit {
       console.log(res);
       if (res) {
         // this.showToast('success', 'Success', 'You logged in');
-        this.handleResponse(res);
+        setTimeout(() => this.handleResponse(res), 2000);
       } else {
+        setTimeout(() => this.loading = false, 2000);
+        setTimeout(() => this.submitted = false, 2000);
         // this.showToast('danger', 'Error', 'E-mail or password Incorrect!');
       }
       // this.pagesservice.userLogin(data).subscribe(
@@ -101,7 +105,7 @@ export class LoginComponent implements OnInit {
         this.router.navigateByUrl('hge/queue');
       } else if (this.token.admin()) {
         console.log('redirect to admin');
-        this.router.navigateByUrl('admin');
+        this.router.navigateByUrl('admin/dashboard');
       } else {
         console.log('redirect to hge');
         this.router.navigateByUrl('hge');

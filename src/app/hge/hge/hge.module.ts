@@ -44,8 +44,18 @@ import { ApplicationComponent } from './application/application.component';
 import { ClientsComponent } from './clients/clients.component';
 import { ClientViewComponent } from './dialogs/client-view/client-view.component';
 import { ClientEditComponent } from './dialogs/client-edit/client-edit.component';
-import { AdminRoutingModule } from './admin/admin-routing.module';
-import { AdminModule } from './admin/admin.module';
+// import { AdminRoutingModule } from './admin/admin-routing.module';
+// import { AdminModule } from './admin/admin.module';
+
+import { CountersComponent } from './admin/counters/counters.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { EmployeeComponent } from './admin/employee/employee.component';
+import { FinanceComponent } from './admin/finance/finance.component';
+import { HrComponent } from './admin/hr/hr.component';
+import { PaymentsComponent } from './admin/payments/payments.component';
+import { CounterEditDialogComponent } from './admin/dialogs/counter-edit-dialog/counter-edit-dialog.component';
+import { CounterAddDialogComponent } from './admin/dialogs/counter-add-dialog/counter-add-dialog.component';
+import { EmployeeEditDialogComponent } from './admin/dialogs/employee-edit-dialog/employee-edit-dialog.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +71,15 @@ import { AdminModule } from './admin/admin.module';
     ClientsComponent,
     ClientViewComponent,
     ClientEditComponent,
+    HrComponent,
+    DashboardComponent,
+    FinanceComponent,
+    EmployeeComponent,
+    PaymentsComponent,
+    CountersComponent,
+    CounterAddDialogComponent,
+    CounterEditDialogComponent,
+    EmployeeEditDialogComponent,
   ],
   imports: [
     CommonModule,
@@ -92,8 +111,8 @@ import { AdminModule } from './admin/admin.module';
     NbStepperModule,
     FormsModule,
     ReactiveFormsModule,
-    AdminRoutingModule,
-    AdminModule,
+    // AdminRoutingModule,
+    // AdminModule,
   ]
 })
 export class HgeModule { }

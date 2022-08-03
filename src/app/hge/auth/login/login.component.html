@@ -74,7 +74,14 @@
                             </div>
 
                             <!-- Submit button -->
-                            <button class="btn btn-primary btn-block mb-4" status="primary" size="large" [disabled]="submitted || !form.valid" [class.btn-pulse]="submitted">Login</button> Don't have an account?
+                            <button class="btn btn-primary btn-block mb-4" status="primary" size="large" [disabled]="submitted || !form.valid" [class.btn-pulse]="submitted">
+                              <ng-container *ngIf="loading else elselogin">
+                              Logging in...
+                            </ng-container>
+                            <ng-template #elselogin>
+                              Login
+                            </ng-template>
+                          </button> Don't have an account?
                             <a class="register mb-4" [routerLink]="['/auth/register']">Create an Account</a>
 
                             <!-- Register buttons -->

@@ -1,1 +1,84 @@
-<p>employee works!</p>
+<nb-card>
+    <nb-card-header>
+        Employees
+
+        <div class="conf">
+            <nb-actions size="small">
+                <nb-action matRipple icon="search-outline" nbTooltip="Search for a Employee" nbTooltipPlacement="bottom"></nb-action>
+                <nb-action matRipple icon="plus-outline" (click)="newEmployee()" nbTooltip="Add new Employee" nbTooltipPlacement="bottom"></nb-action>
+            </nb-actions>
+        </div>
+    </nb-card-header>
+
+    <nb-card-body>
+        <div class="row table-striped text-center">
+            <div class="col-12">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">phone</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Section</th>
+                            <th scope="col">Active</th>
+                            <th scope="col">Config</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Name 1</td>
+                            <td>Name 2</td>
+                            <td>email@email.com</td>
+                            <td>xxxxxxxxxx</td>
+                            <td>xxxxxxxxxx</td>
+                            <td>xxxxxxxxxx</td>
+                            <td>xxxxxxxxxx</td>
+                            <td>
+                                <nb-actions size="small">
+                                    <nb-action matRipple icon="expand-outline" (click)="showEmployee(1)" nbTooltip="Show Employee Info" nbTooltipPlacement="bottom"></nb-action>
+                                    <nb-action matRipple icon="edit-outline" (click)="editEmployee(1)" nbTooltip="Edit Employee Info" nbTooltipPlacement="bottom"></nb-action>
+                                </nb-actions>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Name 1</td>
+                            <td>Name 2</td>
+                            <td>email@email.com</td>
+                            <td>xxxxxxxxxx</td>
+                            <td>xxxxxxxxxx</td>
+                            <td>xxxxxxxxxx</td>
+                            <td>xxxxxxxxxx</td>
+                            <td>
+                                <nb-actions size="small">
+                                    <nb-action matRipple icon="expand-outline" (click)="showEmployee(2)" nbTooltip="Show Employee Info" nbTooltipPlacement="bottom"></nb-action>
+                                    <nb-action matRipple icon="edit-outline" (click)="editEmployee(2)" nbTooltip="Edit Employee Info" nbTooltipPlacement="bottom"></nb-action>
+                                </nb-actions>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Name 1</td>
+                            <td>Name 2</td>
+                            <td>email@email.com</td>
+                            <td>xxxxxxxxxx</td>
+                            <td>xxxxxxxxxx</td>
+                            <td>xxxxxxxxxx</td>
+                            <td>xxxxxxxxxx</td>
+                            <td>
+                                <nb-actions size="small">
+                                    <nb-action matRipple icon="expand-outline" (click)="showEmployee(3)" nbTooltip="Show Employee Info" nbTooltipPlacement="bottom"></nb-action>
+                                    <nb-action matRipple icon="edit-outline" (click)="editEmployee(3)" nbTooltip="Edit Employee Info" nbTooltipPlacement="bottom"></nb-action>
+                                </nb-actions>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </nb-card-body>
+</nb-card>

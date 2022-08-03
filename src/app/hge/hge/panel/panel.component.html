@@ -2,19 +2,10 @@
     <nb-card-header>
         Clients
 
-        <!-- <div class="add">
-            <button nbButton matRipple status="primary" outline (click)="newClient()">
-              <i class="nb-plus"></i>
-            </button>
-        </div>
-
-        <div class="srh">
-            <nb-search type="column-curtain"></nb-search>
-        </div> -->
         <div class="conf">
             <nb-actions size="small">
-                <nb-action matRipple icon="search-outline"></nb-action>
-                <nb-action matRipple icon="plus-outline" (click)="newClient()"></nb-action>
+                <nb-action matRipple icon="search-outline" nbTooltip="Search for a Client" nbTooltipPlacement="bottom"></nb-action>
+                <nb-action matRipple icon="plus-outline" (click)="newClient()" nbTooltip="Add new Client" nbTooltipPlacement="bottom"></nb-action>
             </nb-actions>
         </div>
     </nb-card-header>
@@ -40,9 +31,9 @@
                             <td>email@email.com</td>
                             <td>
                                 <nb-actions size="small">
-                                    <nb-action matRipple icon="expand-outline" (click)="showClient(1)"></nb-action>
-                                    <nb-action matRipple icon="edit-outline" (click)="editClient(1)"></nb-action>
-                                    <nb-action matRipple icon="menu-outline" (click)="serviceClient(1)"></nb-action>
+                                    <nb-action matRipple icon="expand-outline" (click)="showClient(1)" nbTooltip="Show Client Info" nbTooltipPlacement="bottom"></nb-action>
+                                    <nb-action matRipple icon="edit-outline" (click)="editClient(1)" nbTooltip="Edit Client Info" nbTooltipPlacement="bottom"></nb-action>
+                                    <nb-action matRipple icon="menu-outline" (click)="serviceClient(1)" nbTooltip="Show Client Services" nbTooltipPlacement="bottom"></nb-action>
                                 </nb-actions>
                             </td>
                         </tr>
@@ -53,9 +44,9 @@
                             <td>email@email.com</td>
                             <td>
                                 <nb-actions size="small">
-                                    <nb-action matRipple icon="expand-outline" (click)="showClient(2)"></nb-action>
-                                    <nb-action matRipple icon="edit-outline" (click)="editClient(2)"></nb-action>
-                                    <nb-action matRipple icon="menu-outline" (click)="serviceClient(2)"></nb-action>
+                                    <nb-action matRipple icon="expand-outline" (click)="showClient(2)" nbTooltip="Show Client Info" nbTooltipPlacement="bottom"></nb-action>
+                                    <nb-action matRipple icon="edit-outline" (click)="editClient(2)" nbTooltip="Edit Client Info" nbTooltipPlacement="bottom"></nb-action>
+                                    <nb-action matRipple icon="menu-outline" (click)="serviceClient(2)" nbTooltip="Show Client Services" nbTooltipPlacement="bottom"></nb-action>
                                 </nb-actions>
                             </td>
                         </tr>
@@ -66,9 +57,9 @@
                             <td>email@email.com</td>
                             <td>
                                 <nb-actions size="small">
-                                    <nb-action matRipple icon="expand-outline" (click)="showClient(3)"></nb-action>
-                                    <nb-action matRipple icon="edit-outline" (click)="editClient(3)"></nb-action>
-                                    <nb-action matRipple icon="menu-outline" (click)="serviceClient(3)"></nb-action>
+                                    <nb-action matRipple icon="expand-outline" (click)="showClient(3)" nbTooltip="Show Client Info" nbTooltipPlacement="bottom"></nb-action>
+                                    <nb-action matRipple icon="edit-outline" (click)="editClient(3)" nbTooltip="Edit Client Info" nbTooltipPlacement="bottom"></nb-action>
+                                    <nb-action matRipple icon="menu-outline" (click)="serviceClient(3)" nbTooltip="Show Client Services" nbTooltipPlacement="bottom"></nb-action>
                                 </nb-actions>
                             </td>
                         </tr>

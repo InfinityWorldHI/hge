@@ -4,8 +4,8 @@
 
         <div class="conf">
             <nb-actions size="small">
-                <nb-action matRipple icon="search-outline"></nb-action>
-                <nb-action matRipple icon="plus-outline" (click)="newClient()"></nb-action>
+                <nb-action matRipple icon="search-outline" nbTooltip="Search for Client" nbTooltipPlacement="bottom"></nb-action>
+                <nb-action matRipple icon="plus-outline" (click)="newClient()" nbTooltip="Add new Client" nbTooltipPlacement="bottom"></nb-action>
             </nb-actions>
         </div>
     </nb-card-header>
@@ -30,7 +30,7 @@
                             <td>Name 2</td>
                             <td>email@email.com</td>
                             <td>
-                                <nb-action matRipple icon="menu-outline" (click)="showClient(1)"></nb-action>
+                                <nb-action matRipple icon="menu-outline" (click)="showClient(1)" nbTooltip="View this Client Info" nbTooltipPlacement="bottom"></nb-action>
                             </td>
                         </tr>
                         <tr>
@@ -39,7 +39,7 @@
                             <td>Name 2</td>
                             <td>email@email.com</td>
                             <td>
-                                <nb-action matRipple icon="menu-outline" (click)="showClient(2)"></nb-action>
+                                <nb-action matRipple icon="menu-outline" (click)="showClient(2)" nbTooltip="View this Client Info" nbTooltipPlacement="bottom"></nb-action>
                             </td>
                         </tr>
                         <tr>
@@ -48,7 +48,7 @@
                             <td>Name 2</td>
                             <td>email@email.com</td>
                             <td>
-                                <nb-action matRipple icon="menu-outline" (click)="showClient(3)"></nb-action>
+                                <nb-action matRipple icon="menu-outline" (click)="showClient(3)" nbTooltip="View this Client Info" nbTooltipPlacement="bottom"></nb-action>
                             </td>
                         </tr>
                     </tbody>

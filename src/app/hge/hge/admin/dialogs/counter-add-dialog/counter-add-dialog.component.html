@@ -1,0 +1,10 @@
+<nb-card>
+    <nb-card-header>Enter Counter Number</nb-card-header>
+    <nb-card-body>
+        <input #number nbInput placeholder="number">
+    </nb-card-body>
+    <nb-card-footer>
+        <button class="cancel" nbButton matRipple status="danger" (click)="cancel()">Cancel</button>
+        <button nbButton matRipple status="success" (click)="submit(number.value)">Add</button>
+    </nb-card-footer>
+</nb-card>

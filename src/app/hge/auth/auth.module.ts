@@ -9,7 +9,8 @@ import {
   NbAlertModule,
   NbButtonModule,
   NbCheckboxModule,
-  NbInputModule
+  NbInputModule,
+  NbSpinnerModule,
 } from '@nebular/theme';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component'
@@ -30,6 +31,7 @@ import { ThemeModule } from '../../@theme/theme.module';
     NbCheckboxModule,
     AuthRoutingModule,
     ThemeModule,
+    NbSpinnerModule,
 
     NbAuthModule,
   ]
