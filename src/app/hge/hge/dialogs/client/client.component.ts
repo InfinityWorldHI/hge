@@ -10,6 +10,7 @@ import { SmartTableData } from '../../../../@core/data/smart-table';
 })
 export class ClientComponent implements OnInit {
 
+  userRole: number = 0;
   @Input() id: string;
 
   value = "";

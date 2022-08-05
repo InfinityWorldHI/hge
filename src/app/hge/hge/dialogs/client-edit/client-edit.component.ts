@@ -10,6 +10,10 @@ export class ClientEditComponent implements OnInit {
 
   @Input() id: string;
 
+  userRole: number = 0;
+
+  userImage: string;
+
   value = "";
 
   constructor(

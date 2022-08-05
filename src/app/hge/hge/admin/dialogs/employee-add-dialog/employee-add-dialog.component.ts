@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmployeeAddDialogComponent implements OnInit {
 
-  constructor() { }
+  userRole: number = 0;
+
+  constructor(
+
+  ) { }
 
   ngOnInit(): void {
   }

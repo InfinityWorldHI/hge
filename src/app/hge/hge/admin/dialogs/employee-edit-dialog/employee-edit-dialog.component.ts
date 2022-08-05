@@ -7,11 +7,17 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class EmployeeEditDialogComponent implements OnInit {
 
+  //Usere ID for editing his info
   @Input() id: string;
+
+  userRole: number = 0;
+
+  userImage: string;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.userImage = 'https://i.pravatar.cc/500?img=13';
   }
 
 }

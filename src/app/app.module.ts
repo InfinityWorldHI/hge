@@ -28,7 +28,7 @@ import { HgeModule } from './hge/hge/hge.module';
 @NgModule({
   declarations: [
     AppComponent,
-    AuthComponent
+    AuthComponent,
   ],
   imports: [
     BrowserModule,

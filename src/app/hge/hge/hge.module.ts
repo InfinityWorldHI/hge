@@ -56,6 +56,9 @@ import { PaymentsComponent } from './admin/payments/payments.component';
 import { CounterEditDialogComponent } from './admin/dialogs/counter-edit-dialog/counter-edit-dialog.component';
 import { CounterAddDialogComponent } from './admin/dialogs/counter-add-dialog/counter-add-dialog.component';
 import { EmployeeEditDialogComponent } from './admin/dialogs/employee-edit-dialog/employee-edit-dialog.component';
+import { EmployeeAddDialogComponent } from './admin/dialogs/employee-add-dialog/employee-add-dialog.component';
+import { EmployeeViewDialogComponent } from './admin/dialogs/employee-view-dialog/employee-view-dialog.component';
+import { ImageUploadComponent } from '../components/image-upload/image-upload.component';
 
 @NgModule({
   declarations: [
@@ -79,7 +82,10 @@ import { EmployeeEditDialogComponent } from './admin/dialogs/employee-edit-dialo
     CountersComponent,
     CounterAddDialogComponent,
     CounterEditDialogComponent,
+    EmployeeViewDialogComponent,
+    EmployeeAddDialogComponent,
     EmployeeEditDialogComponent,
+    ImageUploadComponent,
   ],
   imports: [
     CommonModule,

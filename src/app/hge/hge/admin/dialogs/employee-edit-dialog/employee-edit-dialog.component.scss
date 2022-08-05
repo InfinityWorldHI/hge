@@ -1,0 +1,22 @@
+@import '../../../../../@theme/styles/themes';
+@include nb-install-component() {
+    nb-card {
+        margin-top: 30px;
+        max-height: 600px;
+    }
+}
+
+.newuser {
+    width: 190vh;
+}
+
+.col-2,
+.col-3,
+.col-4 {
+    padding-right: 3px !important;
+    padding-left: 3px !important;
+}
+
+.status-success {
+    line-height: 1.5rem !important;
+}
