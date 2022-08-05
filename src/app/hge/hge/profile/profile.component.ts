@@ -12,6 +12,10 @@ import { ClientServiceComponent } from '../dialogs/client-service/client-service
 })
 export class ProfileComponent implements OnInit {
 
+  userRole: number = 0;
+
+  userImage: string;
+
   settings = {
     add: {
       addButtonContent: '<i class="nb-plus"></i>',
@@ -68,6 +72,7 @@ export class ProfileComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.userImage = 'https://i.pravatar.cc/500?img=13';
   }
 
   showService(id: any): void {
