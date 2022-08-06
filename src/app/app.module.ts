@@ -24,11 +24,13 @@ import { AuthComponent } from './hge/auth/auth.component';
 
 import { NbPasswordAuthStrategy, NbAuthModule, NbAuthJWTToken } from '@nebular/auth';
 import { HgeModule } from './hge/hge/hge.module';
+import { SendMailComponent } from './hge/components/send-mail/send-mail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthComponent,
+    SendMailComponent,
   ],
   imports: [
     BrowserModule,
