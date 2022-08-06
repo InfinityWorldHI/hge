@@ -10,11 +10,21 @@ export class ClientEditComponent implements OnInit {
 
   @Input() id: string;
 
-  userRole: number = 0;
-
-  userImage: string;
-
-  value = "";
+  client = {
+    image: '',
+    fname: '',
+    lname: '',
+    email: '',
+    phnumber: '',
+    whatsapp: '',
+    address: '',
+    rescountry: '',
+    rescity: '',
+    street: '',
+    streetno: '',
+    iban: '',
+    status: '',
+  };
 
   constructor(
     protected ref: NbDialogRef<ClientEditComponent>) {
@@ -22,6 +32,10 @@ export class ClientEditComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  edit(): void {
+
   }
 
 }

@@ -7,8 +7,6 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ImageUploadComponent implements OnInit {
 
-  //This for specifing the user
-  @Input() role: number;
   //The user avatar
   @Input() image: string;
 
@@ -19,7 +17,6 @@ export class ImageUploadComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.role);
     console.log(this.image);
 
     this.imagePreview = document.getElementById('imagePreview');

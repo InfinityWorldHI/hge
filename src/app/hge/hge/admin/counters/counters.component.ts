@@ -22,7 +22,11 @@ export class CountersComponent implements OnInit {
   }
 
   editCounter(id: any): void {
-    this.dialogService.open(CounterEditDialogComponent, {});
+    this.dialogService.open(CounterEditDialogComponent, {
+      context: {
+        id: id,
+      },
+    });
   }
 
   delCounter(id: any): void {

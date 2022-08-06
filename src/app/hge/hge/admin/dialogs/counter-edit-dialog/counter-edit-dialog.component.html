@@ -1,10 +1,26 @@
-<nb-card>
-    <nb-card-header>Edit Counter Number</nb-card-header>
-    <nb-card-body>
-        <input #number nbInput placeholder="number">
-    </nb-card-body>
-    <nb-card-footer>
-        <button class="cancel" nbButton matRipple status="danger" (click)="cancel()">Cancel</button>
-        <button nbButton matRipple status="success" (click)="edit(number.value)">Edit</button>
-    </nb-card-footer>
-</nb-card>
+<form (ngSubmit)="edit()" #form="ngForm">
+    <nb-card>
+        <nb-card-header>Enter Counter info</nb-card-header>
+        <nb-card-body>
+            <div class="form-group">
+                <label for="countNo" class="label">Counter No.</label>
+                <input type="text" nbInput fullWidth id="countNo" placeholder="Counter No." [(ngModel)]="countNo" name="countNo">
+            </div>
+            <div class="form-group">
+                <label for="employee" class="label">Employee</label>
+                <nb-select fullWidth id="employee" selected="1" [(ngModel)]="employee" name="employee">
+                    <nb-option value="1">Employee 1</nb-option>
+                    <nb-option value="2">Employee 2</nb-option>
+                </nb-select>
+            </div>
+        </nb-card-body>
+        <nb-card-footer>
+            <div class="row">
+                <div class="col-12 md-5 text-right">
+                    <button class="cancel" nbButton matRipple status="danger" (click)="cancel()">Cancel</button>
+                    <button nbButton matRipple status="success">Edit</button>
+                </div>
+            </div>
+        </nb-card-footer>
+    </nb-card>
+</form>

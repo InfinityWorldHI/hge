@@ -1,14 +1,14 @@
-<div class="newuser row">
-    <div class="col-12">
-        <nb-card>
-            <nb-card-header>
-                Edit Client Name
-            </nb-card-header>
-            <nb-card-body>
-                <form>
+<form (ngSubmit)="edit()" #form="ngForm">
+    <div class="newuser row">
+        <div class="col-12">
+            <nb-card>
+                <nb-card-header>
+                    Edit Client Name
+                </nb-card-header>
+                <nb-card-body>
                     <div class="row">
                         <div class="col-2">
-                            <ngx-image-upload [image]="userImage" [role]="userRole"></ngx-image-upload>
+                            <ngx-image-upload [image]="client.image"></ngx-image-upload>
                         </div>
                         <div class="col-4">
                             <div class="form-group">
@@ -252,14 +252,15 @@
                         </div>
                     </div>
 
+                </nb-card-body>
+                <nb-card-footer>
                     <div class="row">
                         <div class="col-12 md-5 text-right">
                             <button type="submit" nbButton status="primary">Save</button>
                         </div>
                     </div>
-
-                </form>
-            </nb-card-body>
-        </nb-card>
+                </nb-card-footer>
+            </nb-card>
+        </div>
     </div>
-</div>
+</form>

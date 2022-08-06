@@ -7,13 +7,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmployeeAddDialogComponent implements OnInit {
 
-  userRole: number = 0;
+  user: any = {
+    image: 'https://i.pravatar.cc/500?img=13',
+    fname: 'FirstName',
+    lname: 'LastName',
+    email: 'email@hge.com',
+    phnumber: '012345678912',
+    address: 'street, home',
+    section: 'HR',
+    postion: 'Manger',
+    status: 'Active',
+    stda: '00/00/0000',
+    enda: '00/00/0000',
+  };
 
   constructor(
 
   ) { }
 
   ngOnInit(): void {
+  }
+
+  add(): void {
+
   }
 
 }

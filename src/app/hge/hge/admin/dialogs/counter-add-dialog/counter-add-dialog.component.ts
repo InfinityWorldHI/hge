@@ -16,6 +16,9 @@ export class CounterAddDialogComponent {
 
   position: NbGlobalPosition = NbGlobalPhysicalPosition.TOP_RIGHT;
 
+  countNo: string;
+  employee: number;
+
   constructor(
     protected ref: NbDialogRef<CounterAddDialogComponent>,
     private toastrService: NbToastrService,
@@ -25,7 +28,7 @@ export class CounterAddDialogComponent {
     this.ref.close();
   }
 
-  submit(number) {
+  submit() {
     this.showToast('success', "Client", "New Client has been added successfully");
     this.showToast('warning', "Client", "There was an issue");
     // this.ref.close(number);

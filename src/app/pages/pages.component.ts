@@ -96,7 +96,7 @@ export class PagesComponent implements OnInit {
         {
           title: 'Employee',
           icon: 'body-outline',
-          link: 'employee',
+          link: 'employees',
         },
         {
           title: 'HR',

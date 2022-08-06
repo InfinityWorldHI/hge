@@ -86,7 +86,10 @@
                             </div>
 
                             <!-- Submit button -->
-                            <button type="submit" class="btn btn-primary btn-block mb-4">Register</button> You have an account?
+                            <button type="submit" class="btn btn-primary btn-block mb-4">
+                                Register
+                                <ngx-loader *ngIf="loading"></ngx-loader>
+                            </button> You have an account?
                             <a class="register mb-4" [routerLink]="['/auth/login']">Login</a>
 
                             <!-- Register buttons -->

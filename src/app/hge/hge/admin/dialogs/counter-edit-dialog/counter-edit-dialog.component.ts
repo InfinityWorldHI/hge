@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import {
   NbComponentStatus,
   NbGlobalPhysicalPosition,
@@ -12,20 +12,28 @@ import {
   templateUrl: './counter-edit-dialog.component.html',
   styleUrls: ['./counter-edit-dialog.component.scss']
 })
-export class CounterEditDialogComponent {
+export class CounterEditDialogComponent implements OnInit {
+
+  @Input() id: any;
 
   position: NbGlobalPosition = NbGlobalPhysicalPosition.TOP_RIGHT;
+
+  countNo: string;
+  employee: number;
 
   constructor(
     protected ref: NbDialogRef<CounterEditDialogComponent>,
     private toastrService: NbToastrService,
   ) {}
 
+  ngOnInit(): void {
+  }
+
   cancel() {
     this.ref.close();
   }
 
-  edit(number) {
+  edit() {
     this.showToast('success', "Client", "Client data has been edited successfully");
     this.showToast('warning', "Client", "There was an issue");
     // this.ref.close(number);

@@ -15,11 +15,13 @@ import {
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component'
 import { ThemeModule } from '../../@theme/theme.module';
+import { LoaderComponent } from '../components/loader/loader.component';
 
 @NgModule({
   declarations: [
     LoginComponent,
     RegisterComponent,
+    LoaderComponent,
   ],
   imports: [
     CommonModule,

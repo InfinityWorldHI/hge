@@ -5,188 +5,74 @@
                 Client Name
             </nb-card-header>
             <nb-card-body>
-                <form>
-                    <div class="row">
-                        <div class="col-2">
-                            <img src="assets/images/nick.png" width="150px" class="" alt="">
+                <div class="row">
+                    <div class="col-2">
+                        <ngx-image-upload [image]="user.userImage"></ngx-image-upload>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label for="f1" class="label">First Name</label>
+                            <p id="f1">Lorem Ipsum is simply dummy text</p>
                         </div>
-                        <div class="col-4">
-                            <div class="form-group">
-                                <label for="f1" class="label">dummy text</label>
-                                <p id="f1">Lorem Ipsum is simply dummy text</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="f2" class="label">dummy text</label>
-                                <p id="f2">Lorem Ipsum is simply dummy text</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="f2" class="label">dummy text</label>
-                                <p id="f2">Lorem Ipsum is simply dummy text</p>
-                            </div>
+                        <div class="form-group">
+                            <label for="f2" class="label">Last Name</label>
+                            <p id="f2">Lorem Ipsum is simply dummy text</p>
                         </div>
-                        <div class="col-3">
-                            <div class="form-group">
-                                <label for="f1" class="label">dummy text</label>
-                                <p id="f1">Lorem Ipsum is simply dummy text</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="f2" class="label">dummy text</label>
-                                <p id="f2">Lorem Ipsum is simply dummy text</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="f2" class="label">dummy text</label>
-                                <p id="f2">Lorem Ipsum is simply dummy text</p>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="form-group">
-                                <label for="f1" class="label">dummy text</label>
-                                <p id="f1">Lorem Ipsum is simply dummy text</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="f2" class="label">dummy text</label>
-                                <p id="f2">Lorem Ipsum is simply dummy text</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="f2" class="label">dummy text</label>
-                                <p id="f2">Lorem Ipsum is simply dummy text</p>
-                            </div>
+                        <div class="form-group">
+                            <label for="f2" class="label">dummy text</label>
+                            <p id="f2">Lorem Ipsum is simply dummy text</p>
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="form-group">
-                                <label for="f1" class="label">dummy text</label>
-                                <p id="f1">Lorem Ipsum is simply dummy text</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="f2" class="label">dummy text</label>
-                                <p id="f2">Lorem Ipsum is simply dummy text</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="f2" class="label">dummy text</label>
-                                <p id="f2">Lorem Ipsum is simply dummy text</p>
-                            </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label for="f1" class="label">dummy text</label>
+                            <p id="f1">Lorem Ipsum is simply dummy text</p>
                         </div>
-                        <div class="col-3">
-                            <div class="form-group">
-                                <label for="f1" class="label">dummy text</label>
-                                <p id="f1">Lorem Ipsum is simply dummy text</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="f2" class="label">dummy text</label>
-                                <p id="f2">Lorem Ipsum is simply dummy text</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="f2" class="label">dummy text</label>
-                                <p id="f2">Lorem Ipsum is simply dummy text</p>
-                            </div>
+                        <div class="form-group">
+                            <label for="f2" class="label">dummy text</label>
+                            <p id="f2">Lorem Ipsum is simply dummy text</p>
                         </div>
-                        <div class="col-3">
-                            <div class="form-group">
-                                <label for="f1" class="label">dummy text</label>
-                                <p id="f1">Lorem Ipsum is simply dummy text</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="f2" class="label">dummy text</label>
-                                <p id="f2">Lorem Ipsum is simply dummy text</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="f2" class="label">dummy text</label>
-                                <p id="f2">Lorem Ipsum is simply dummy text</p>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="form-group">
-                                <label for="f1" class="label">dummy text</label>
-                                <p id="f1">Lorem Ipsum is simply dummy text</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="f2" class="label">dummy text</label>
-                                <p id="f2">Lorem Ipsum is simply dummy text</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="f2" class="label">dummy text</label>
-                                <p id="f2">Lorem Ipsum is simply dummy text</p>
-                            </div>
+                        <div class="form-group">
+                            <label for="f2" class="label">dummy text</label>
+                            <p id="f2">Lorem Ipsum is simply dummy text</p>
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="form-group">
-                                <label for="f1" class="label">dummy text</label>
-                                <p id="f1">Lorem Ipsum is simply dummy text</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="f2" class="label">dummy text</label>
-                                <p id="f2">Lorem Ipsum is simply dummy text</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="f2" class="label">dummy text</label>
-                                <p id="f2">Lorem Ipsum is simply dummy text</p>
-                            </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label for="f1" class="label">dummy text</label>
+                            <p id="f1">Lorem Ipsum is simply dummy text</p>
                         </div>
-                        <div class="col-3">
-                            <div class="form-group">
-                                <label for="f1" class="label">dummy text</label>
-                                <p id="f1">Lorem Ipsum is simply dummy text</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="f2" class="label">dummy text</label>
-                                <p id="f2">Lorem Ipsum is simply dummy text</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="f2" class="label">dummy text</label>
-                                <p id="f2">Lorem Ipsum is simply dummy text</p>
-                            </div>
+                        <div class="form-group">
+                            <label for="f2" class="label">dummy text</label>
+                            <p id="f2">Lorem Ipsum is simply dummy text</p>
                         </div>
-                        <div class="col-3">
-                            <div class="form-group">
-                                <label for="f1" class="label">dummy text</label>
-                                <p id="f1">Lorem Ipsum is simply dummy text</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="f2" class="label">dummy text</label>
-                                <p id="f2">Lorem Ipsum is simply dummy text</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="f2" class="label">dummy text</label>
-                                <p id="f2">Lorem Ipsum is simply dummy text</p>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="form-group">
-                                <label for="f1" class="label">dummy text</label>
-                                <p id="f1">Lorem Ipsum is simply dummy text</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="f2" class="label">dummy text</label>
-                                <p id="f2">Lorem Ipsum is simply dummy text</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="f2" class="label">dummy text</label>
-                                <p id="f2">Lorem Ipsum is simply dummy text</p>
-                            </div>
+                        <div class="form-group">
+                            <label for="f2" class="label">dummy text</label>
+                            <p id="f2">Lorem Ipsum is simply dummy text</p>
                         </div>
                     </div>
+                </div>
 
-                    <div class="row">
-                        <div class="col-5" style="border: 1px dashed #0e4cc0aa; padding: 10px;">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                            survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
-                        </div>
-                        <div class="col-2">
-                        </div>
-                        <div class="col-5" style="border: 1px dashed #0e4cc0aa; padding: 10px;">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                            survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
-                        </div>
+                <div class="row">
+                    <div class="col-5" style="border: 1px dashed #0e4cc0aa; padding: 10px;">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
                     </div>
-
-                </form>
+                    <div class="col-2">
+                    </div>
+                    <div class="col-5" style="border: 1px dashed #0e4cc0aa; padding: 10px;">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+                    </div>
+                </div>
             </nb-card-body>
+            <nb-card-footer>
+                <div class="row">
+                    <div class="col-12 md-5 text-right">
+                        <button nbButton status="primary" (click)="close()">Close</button>
+                    </div>
+                </div>
+            </nb-card-footer>
         </nb-card>
     </div>
 </div>

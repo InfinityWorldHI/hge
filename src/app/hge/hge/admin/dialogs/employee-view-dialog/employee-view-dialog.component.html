@@ -1,1 +1,81 @@
-<p>employee-view-dialog works!</p>
+<div class="newuser row">
+    <div class="col-12">
+        <nb-card>
+            <nb-card-header>
+                Employee Info
+            </nb-card-header>
+            <nb-card-body>
+                <div class="row">
+                    <div class="col-4">
+                        <ngx-image-upload [image]="user.userImage"></ngx-image-upload>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label for="fn" class="label">First Name</label>
+                            <p id="fn">{{ user.fname }}</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="ln" class="label">Last Name</label>
+                            <p id="ln">{{ user.lname }}</p>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label for="email" class="label">E-mail</label>
+                            <p id="email">{{ user.email }}</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="pnum" class="label">Phone Number</label>
+                            <p id="pnum">{{ user.phnumber }}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label for="address" class="label">Address</label>
+                            <p id="address">{{ user.address }}</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="section" class="label">Section</label>
+                            <p id="section">{{ user.section }}</p>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label for="postion" class="label">Postion</label>
+                            <p id="postion">{{ user.postion }}</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="status" class="label">Status</label>
+                            <p id="status">{{ user.status }}</p>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label for="stda" class="label">Start Date</label>
+                            <p id="stda">{{ user.stda }}</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="enda" class="label">End Date</label>
+                            <p id="enda">{{ user.enda }}</p>
+                        </div>
+                    </div>
+                </div>
+
+            </nb-card-body>
+            <nb-card-footer>
+                <div class="row">
+                    <div class="col-12 md-5 text-right">
+                        <button nbButton status="primary" (click)="close()">Close</button>
+                    </div>
+                </div>
+            </nb-card-footer>
+        </nb-card>
+    </div>
+</div>

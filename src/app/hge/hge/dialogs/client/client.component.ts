@@ -1,7 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { LocalDataSource } from 'ng2-smart-table';
 import { NbDialogRef, NbSearchService } from '@nebular/theme';
-import { SmartTableData } from '../../../../@core/data/smart-table';
 
 @Component({
   selector: 'ngx-client',
@@ -10,16 +8,33 @@ import { SmartTableData } from '../../../../@core/data/smart-table';
 })
 export class ClientComponent implements OnInit {
 
-  userRole: number = 0;
   @Input() id: string;
 
-  value = "";
+  client = {
+    image: '',
+    fname: '',
+    lname: '',
+    email: '',
+    phnumber: '',
+    whatsapp: '',
+    address: '',
+    rescountry: '',
+    rescity: '',
+    street: '',
+    streetno: '',
+    iban: '',
+    status: '',
+  };
 
   constructor(
     protected ref: NbDialogRef<ClientComponent>) {
   }
 
   ngOnInit(): void {
+  }
+
+  add(): void {
+
   }
 
 }

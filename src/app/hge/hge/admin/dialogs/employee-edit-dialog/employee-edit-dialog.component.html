@@ -1,35 +1,35 @@
-<div class="newuser row">
-    <div class="col-12">
-        <nb-card>
-            <nb-card-header>
-                Edit Employee
-            </nb-card-header>
-            <nb-card-body>
-                <form>
+<form (ngSubmit)="edit()" #form="ngForm">
+    <div class="row newuser">
+        <div class="col-12">
+            <nb-card>
+                <nb-card-header>
+                    Edit Employee
+                </nb-card-header>
+                <nb-card-body>
                     <div class="row">
-                        <div class="col-2">
-                            <ngx-image-upload [image]="userImage" [role]="userRole"></ngx-image-upload>
+                        <div class="col-3">
+                            <ngx-image-upload [image]="user.image"></ngx-image-upload>
                         </div>
 
                         <div class="col-5">
                             <div class="form-group">
                                 <label for="fn" class="label">First Name</label>
-                                <input type="text" nbInput fullWidth id="fn" placeholder="First Name">
+                                <input type="text" nbInput fullWidth id="fn" placeholder="First Name" [(ngModel)]="user.fname">
                             </div>
                             <div class="form-group">
                                 <label for="ln" class="label">Last Name</label>
-                                <input type="text" nbInput fullWidth id="ln" placeholder="Last Name">
+                                <input type="text" nbInput fullWidth id="ln" placeholder="Last Name" [(ngModel)]="user.lname">
                             </div>
                         </div>
 
-                        <div class="col-5">
+                        <div class="col-4">
                             <div class="form-group">
                                 <label for="email" class="label">E-mail</label>
-                                <input type="email" nbInput fullWidth id="email" placeholder="E-mail">
+                                <input type="email" nbInput fullWidth id="email" placeholder="E-mail" [(ngModel)]="user.email">
                             </div>
                             <div class="form-group">
                                 <label for="pnum" class="label">Phone Number</label>
-                                <input type="text" nbInput fullWidth id="pnum" placeholder="Phone Number">
+                                <input type="text" nbInput fullWidth id="pnum" placeholder="Phone Number" [(ngModel)]="user.phnumber">
                             </div>
                         </div>
                     </div>
@@ -38,11 +38,11 @@
                         <div class="col-4">
                             <div class="form-group">
                                 <label for="address" class="label">Address</label>
-                                <input type="text" nbInput fullWidth id="address" placeholder="Address">
+                                <input type="text" nbInput fullWidth id="address" placeholder="Address" [(ngModel)]="user.address">
                             </div>
                             <div class="form-group">
                                 <label for="section" class="label">Section</label>
-                                <nb-select fullWidth id="section" selected="1">
+                                <nb-select fullWidth id="section" selected="1" [(ngModel)]="user.section">
                                     <nb-option value="1">Section 1</nb-option>
                                     <nb-option value="2">Section 2</nb-option>
                                 </nb-select>
@@ -52,14 +52,14 @@
                         <div class="col-4">
                             <div class="form-group">
                                 <label for="postion" class="label">Postion</label>
-                                <nb-select fullWidth id="postion" selected="1">
+                                <nb-select fullWidth id="postion" selected="1" [(ngModel)]="user.postion">
                                     <nb-option value="1">postion 1</nb-option>
                                     <nb-option value="2">postion 2</nb-option>
                                 </nb-select>
                             </div>
                             <div class="form-group">
                                 <label for="status" class="label">Status</label>
-                                <nb-select fullWidth id="status" selected="1">
+                                <nb-select fullWidth id="status" selected="1" [(ngModel)]="user.status">
                                     <nb-option value="1">status 1</nb-option>
                                     <nb-option value="2">status 2</nb-option>
                                 </nb-select>
@@ -69,23 +69,25 @@
                         <div class="col-4">
                             <div class="form-group">
                                 <label for="stda" class="label">Start Date</label>
-                                <input type="text" nbInput fullWidth id="stda" placeholder="Start Date">
+                                <input nbInput fullWidth id="stda" placeholder="Start Date" [nbDatepicker]="formpicker" [(ngModel)]="user.stda">
+                                <nb-datepicker #formpicker></nb-datepicker>
                             </div>
                             <div class="form-group">
                                 <label for="enda" class="label">End Date</label>
-                                <input type="text" nbInput fullWidth id="enda" placeholder="End Date">
+                                <input nbInput fullWidth id="enda" placeholder="End Date" [nbDatepicker]="formpicker" [(ngModel)]="user.enda">
+                                <nb-datepicker #formpicker></nb-datepicker>
                             </div>
                         </div>
                     </div>
-
+                </nb-card-body>
+                <nb-card-footer>
                     <div class="row">
                         <div class="col-12 md-5 text-right">
-                            <button type="submit" nbButton status="primary">Add</button>
+                            <button type="submit" nbButton status="primary">Edit</button>
                         </div>
                     </div>
-
-                </form>
-            </nb-card-body>
-        </nb-card>
+                </nb-card-footer>
+            </nb-card>
+        </div>
     </div>
-</div>
+</form>

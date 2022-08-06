@@ -65,7 +65,7 @@ const routes: Routes = [
         component: DashboardComponent,
       },
       {
-        path: 'employee',
+        path: 'employees',
         component: EmployeeComponent,
       },
       //Hr
