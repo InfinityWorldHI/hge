@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { NbDialogRef } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-ticket',
@@ -7,13 +8,16 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class TicketComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    protected ref: NbDialogRef<TicketComponent>,
+  ) { }
 
   ngOnInit(): void {
   }
 
   cancel(): void {
     console.log("cancel");
+    this.ref.close();
   }
 
   print(): void {
@@ -23,7 +27,8 @@ export class TicketComponent implements OnInit {
      document.body.innerHTML = ticket;
      window.print();
      document.body.innerHTML = originalContents;
-     console.log("cancel");
+    console.log("cancel");
+     this.ref.close();
   }
 
 }
