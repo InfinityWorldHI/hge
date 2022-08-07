@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { NbWindowRef } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-send-mail',
   templateUrl: './send-mail.component.html',
   styleUrls: ['./send-mail.component.scss']
 })
-export class SendMailComponent implements OnInit {
+export class SendMailComponent {
 
-  constructor() { }
+  constructor(public windowRef: NbWindowRef) {}
 
-  ngOnInit(): void {
+  close() {
+    this.windowRef.close();
   }
 
 }

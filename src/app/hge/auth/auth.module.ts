@@ -34,7 +34,6 @@ import { LoaderComponent } from '../components/loader/loader.component';
     AuthRoutingModule,
     ThemeModule,
     NbSpinnerModule,
-
     NbAuthModule,
   ]
 })

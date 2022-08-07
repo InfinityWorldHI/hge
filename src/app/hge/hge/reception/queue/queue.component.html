@@ -6,38 +6,23 @@
             </nb-card-header>
             <nb-card-body>
                 <div class="row text-center">
-                    <div class="col-3">
+                    <div *ngFor="let counter of counters" class="col-3">
                         <p>
-                            <img src="/assets/images/t-desk.png" width="100">
-                            <span>No.1</span>
-                            <ngx-loader-dots></ngx-loader-dots>
+                            <ng-container *ngIf="counter.status; else elseimg">
+                                <img src="/assets/images/t-desk.png" width="100">
+                            </ng-container>
+                            <ng-template #elseimg>
+                                <img src="/assets/images/desk.png" width="100">
+                            </ng-template>
+
+                            <span class="cona">{{ counter.name }}</span>
                         </p>
-                        <p class="c-no">26</p>
+                        <div class="loader">
+                            <ngx-loader-dots *ngIf="counter.status"></ngx-loader-dots>
+                        </div>
+                        <span class="c-no">{{ counter.ticket }}</span>
                     </div>
-                    <div class="col-3">
-                        <p>
-                            <img src="/assets/images/desk.png" width="100">
-                            <span>No.2</span>
-                            <ngx-loader-dots></ngx-loader-dots>
-                        </p>
-                        <p class="c-no">18</p>
-                    </div>
-                    <div class="col-3">
-                        <p>
-                            <img src="/assets/images/desk.png" width="100">
-                            <span>No.3</span>
-                            <ngx-loader-dots></ngx-loader-dots>
-                        </p>
-                        <p class="c-no">21</p>
-                    </div>
-                    <div class="col-3">
-                        <p>
-                            <img src="/assets/images/desk.png" width="100">
-                            <span>No.4</span>
-                            <ngx-loader-dots></ngx-loader-dots>
-                        </p>
-                        <p class="c-no">22</p>
-                    </div>
+
                 </div>
 
             </nb-card-body>
@@ -51,12 +36,12 @@
         <nb-card>
             <nb-card-header>Add to the queue</nb-card-header>
             <nb-card-body>
-                <form>
+                <form (ngSubmit)="print()" #form="ngForm">
                     <div class="row">
                         <div class="col-12">
                             <div class="form-group">
                                 <label for="inputservice" class="label">Service</label>
-                                <nb-select fullWidth id="inputservice" selected="1">
+                                <nb-select fullWidth id="inputservice" selected="1" [(ngModel)]="service" name="service">
                                     <nb-option value="1">service 1</nb-option>
                                     <nb-option value="2">service 2</nb-option>
                                 </nb-select>

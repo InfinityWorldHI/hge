@@ -30,7 +30,6 @@ import { SendMailComponent } from './hge/components/send-mail/send-mail.componen
   declarations: [
     AppComponent,
     AuthComponent,
-    SendMailComponent,
   ],
   imports: [
     BrowserModule,

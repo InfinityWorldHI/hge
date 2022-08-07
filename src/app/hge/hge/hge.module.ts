@@ -61,6 +61,8 @@ import { EmployeeViewDialogComponent } from './admin/dialogs/employee-view-dialo
 import { ImageUploadComponent } from '../components/image-upload/image-upload.component';
 import { LoaderComponent } from '../components/loader/loader.component';
 import { LoaderDotsComponent } from '../components/loader-dots/loader-dots.component';
+import { SendMailComponent } from '../components/send-mail/send-mail.component';
+import { TicketComponent } from '../components/ticket/ticket.component';
 
 @NgModule({
   declarations: [
@@ -89,6 +91,8 @@ import { LoaderDotsComponent } from '../components/loader-dots/loader-dots.compo
     EmployeeEditDialogComponent,
     ImageUploadComponent,
     LoaderDotsComponent,
+    SendMailComponent,
+    TicketComponent,
     // LoaderComponent,
   ],
   exports: [

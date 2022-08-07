@@ -7,7 +7,7 @@ h2 {
     font-weight: 800;
 }
 
-p {
+.cona {
     font-size: 28px;
     font-weight: 700;
 }
@@ -17,13 +17,21 @@ p span {
     top: -35px;
 }
 
+.loader {
+    position: relative;
+    display: block;
+    height: 10px;
+    bottom: 20px;
+}
+
 .c-no {
+    display: block;
     position: relative;
     height: 50px;
-    top: 20px;
+    top: 0;
     font-size: 80px;
     font-weight: 700;
-    margin: 20px !important;
+    margin: 40px 20px 0 20px !important;
 }
 
 nb-card-body {
